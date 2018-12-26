@@ -1,0 +1,144 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.border {
+  border: 3px solid black;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(270deg);
+  width: 300px;
+  height: 300px;
+}
+
+.twelve {
+  position: absolute;
+  margin-left: 280px;
+  margin-top: 137px;
+  font-size: 20px;
+  transform: rotate(90deg);
+  animation: countTwelve 4s linear infinite;
+}
+
+.six {
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 141px;
+  font-size: 20px;
+  transform: rotate(90deg);
+  animation: countSix 4s linear infinite;
+}
+
+.nine {
+  position: absolute;
+  margin-left: 146px;
+  margin-top: 0px;
+  font-size: 20px;
+  transform: rotate(90deg);
+  animation: countNine 4s linear infinite;
+  bottom: 280px;
+}
+
+.three {
+  position: absolute;
+  margin-left: 146px;
+  margin-top: 280px;
+  font-size: 20px;
+  transform: rotate(90deg);
+  animation: countThree 4s linear infinite;
+}
+
+.arrow {
+  transform-origin: left;
+  height: 1px;
+  width: 40%;
+  background: black;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  animation: arrowMove 4s linear infinite;
+}
+
+@keyframes arrowMove {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes countTwelve {
+  0% {
+    color: gold;
+  }
+  5% {
+    color: black;
+  }
+
+  95% {
+    color: black;
+  }
+  100% {
+    color: gold;
+  }
+}
+
+@keyframes countThree {
+  0% {
+    color: black;
+  }
+  20% {
+    color: black;
+  }
+  25% {
+    color: gold;
+  }
+  30% {
+    color: black;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes countSix {
+  0% {
+    color: black;
+  }
+  45% {
+    color: black;
+  }
+  50% {
+    color: gold;
+  }
+  55% {
+    color: black;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes countNine {
+  0% {
+    color: black;
+  }
+  70% {
+    color: black;
+  }
+  75% {
+    color: gold;
+  }
+  80% {
+    color: black;
+  }
+  100% {
+    color: black;
+  }
+}
